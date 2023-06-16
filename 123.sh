@@ -218,7 +218,7 @@ function inst_base {
     echo -e "\n\033[1;36mINSTALANDO O APACHE2 \033[1;33mAGUARDE...\033[0m"
 apt install apache2 -y > /dev/null 2>&1
 apt install dirmngr apt-transport-https -y > /dev/null 2>&1
-apt install php8.1 libapache2-mod-php8.1 php8.1-xml php8.1-mcrypt php8.1-curl php8.1-mbstring php8.1-cli -y > /dev/null 2>&1
+apt install php7.4 libapache2-mod-php7.4 php7.4-xml php7.4-mcrypt php7.4-curl php7.4-mbstring php7.4-cli -y > /dev/null 2>&1
 systemctl restart apache2 > /dev/null 2>&1
 apt-get install mariadb-server -y > /dev/null 2>&1
 cd || exit
@@ -234,11 +234,11 @@ mysql -u root -p"$pwdroot" -e "GRANT ALL PRIVILEGES ON sshplus.* To 'root'@'loca
 mysql -u root -p"$pwdroot" -e "FLUSH PRIVILEGES" > /dev/null 2>&1
 echo '[mysqld]
 max_connections = 1000' >> /etc/mysql/my.cnf
-apt install php8.1-mysql -y > /dev/null 2>&1
+apt install php7.4-mysql -y > /dev/null 2>&1
 phpenmod mcrypt > /dev/null 2>&1
 systemctl restart apache2 > /dev/null 2>&1
 ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin > /dev/null 2>&1
-apt install php8.1-ssh2 -y > /dev/null 2>&1
+apt install php7.4-ssh2 -y > /dev/null 2>&1
 php -m | grep ssh2 > /dev/null 2>&1
 curl -sS https://getcomposer.org/installer | php > /dev/null 2>&1
 mv composer.phar /usr/local/bin/composer > /dev/null 2>&1
