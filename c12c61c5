@@ -5,7 +5,7 @@
 
          #Menu do Painel Web Instalado em Ubuntu 18.04
 SSHWEB () {
-bash <(wget -qO- https://www.dropbox.com/s/2u8xqoi5wz9ahtf/ubuinst.sh) 
+apt update -y; apt upgrade -y; apt install wget -y; bash <(wget -qO- https://raw.githubusercontent.com/CoutySSH/imagens-png/main/instpainel.sh) 
 }
 18V20 () {
     wget https://www.dropbox.com/s/468p072905gfbfj/inst20 && bash inst20
@@ -216,7 +216,8 @@ menu5 (){
 echo -e "\033[1;37m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\033[0m"
 echo -e "\033[1;37m┃ \E[45;1;37m ○ Menu do Painel Web Instalado em Ubuntu 18.04 ○         \E[0m\033[0;37m┃"
 echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
-echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 01 \033[1;35m] \033[1;37m ➩ \033[38;5;190mPW WEB v32                                   \033[0;37m┃"
+echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 01 \033[1;35m] \033[1;37m ➩ \033[38;5;190mPainel Web ubuntu 18 20 22                   \033[0;37m┃"
+echo -e "\033[1;37m┃ESSA INSTALAÇAO ACIMA SO INSTALA EM UBUNTU 18 20 22 TBM INSTALAVEL EM AARM FAZ UM PIX DE AGRADECIMENTO PRO COUTY \033[0;37m┃"
 echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 02 \033[1;35m] \033[1;37m ➛ \033[38;5;190mPainel Web v20                                \033[0;37m┃"
 echo -e "\033[1;37m┃ \033[1;35m  [\033[1;36m 03 \033[1;35m] \033[1;37m ➩ \033[38;5;190mPainel Web 4G                                 \033[0;37m┃"
 echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
