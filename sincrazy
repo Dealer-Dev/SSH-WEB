@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo -e "\033[1;36mINSTALANDO O SINCRONIZADOR MultiHD-SSH\033[0m"
+echo -e "\033[1;36mINSTALANDO O SINCRONIZADOR SSH-PRO\033[0m"
 echo -e ""
 echo -e "\033[1;36mPOR FAVOR AGUARDE....\033[0m"
 echo "America/Sao_Paulo" > /etc/timezone
@@ -14,7 +14,7 @@ wget sshplus.xyz/scripts/utilitarios/syncpainel/sync.tar.bz2 > /dev/null 2>&1
 tar -xvjf sync.tar.bz2 -C /opt/sshplus/ > /dev/null 2>&1
 chmod 777 /opt/sshplus/*-sync > /dev/null 2>&1
 rm /root/sync.tar.bz2  > /dev/null 2>&1
-wget github.com/wellzin-blip/v2022/raw/master/gestorssh/sincpainel.zip > /dev/null 2>&1
+wget github.com/CoutySSH/SSH-WEB/raw/main/ssss/sincpainel.zip > /dev/null 2>&1
 unzip sincpainel.zip > /dev/null 2>&1
 chmod 777 *sh > /dev/null 2>&1
 service ssh restart
@@ -26,3 +26,4 @@ sleep 10
 cat /dev/null > ~/.bash_history && history -c && clear
 rm -rf sincrazy* *.zip* > /dev/null 2>&1
 clear
+menu
